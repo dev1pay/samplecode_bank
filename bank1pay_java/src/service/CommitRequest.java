@@ -57,7 +57,7 @@ public class CommitRequest extends HttpServlet {
 	
 	private void sendPost(String access_key, String command, String trans_ref, String key)
 			throws Exception {
-		String url = "http://api.1pay.vn/bank-charging/service";
+		String url = "http://api.1pay.vn/bank-charging/service/v2";
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		con.setRequestMethod("POST");
